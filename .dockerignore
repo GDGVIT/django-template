@@ -1,0 +1,4 @@
+nginx
+.vscode
+.mypy_cache
+*.sqlite3

@@ -1,0 +1,20 @@
+version: '3.7'
+
+services: 
+    web:
+        build: .
+        volumes: 
+            - static_volume:/app/static
+        expose: 
+            - 8000
+    nginx:
+        build: ./nginx
+        volumes: 
+            - static_volume:/app/static
+        ports: 
+            - 3000:80
+        depends_on: 
+            - web
+
+volumes: 
+    static_volume:
