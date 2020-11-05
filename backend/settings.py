@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*&0j8*7%np1*(8l)whbnw8u^)3lihamvddbz#bv-=3t#z2u^9s'
+SECRET_KEY = os.getenv('SECRET_KEY', '*&0j8*7%np1*(8l)whbnw8u^)3lihamvddbz#bv-=3t#z2u^9s')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(os.getenv('DEBUG', 1))
 
 ALLOWED_HOSTS = []
 
@@ -57,7 +57,7 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
 }
 
-ROOT_URLCONF = 'template.urls'
+ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'template.wsgi.application'
+WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 # Database

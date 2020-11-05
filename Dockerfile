@@ -22,4 +22,4 @@ ENV PYTHONPATH=/app
 RUN python manage.py makemigrations && python manage.py migrate
 RUN python manage.py collectstatic
 
-CMD ["gunicorn", "template.asgi:application", "-b", "0.0.0.0:8000", "-k", "uvicorn.workers.UvicornWorker"]
+CMD ["gunicorn", "backend.asgi:application", "-b", "0.0.0.0:8000", "-k", "uvicorn.workers.UvicornWorker"]
