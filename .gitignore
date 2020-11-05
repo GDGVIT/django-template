@@ -2,3 +2,4 @@ __pycache__
 .vscode
 *.sqlite3
 .DS_store
+.env
