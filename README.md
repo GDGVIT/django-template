@@ -6,6 +6,11 @@
 	<h4 align="center"> An opinionated template for quickly getting started with Django <h4>
 </p>
 
+---
+[![Join Us](https://img.shields.io/badge/Join%20Us-Developer%20Student%20Clubs-red)](https://dsc.community.dev/vellore-institute-of-technology/)
+[![Discord Chat](https://img.shields.io/discord/760928671698649098.svg)](https://discord.com/invite/cWyEXgV)
+
+
 ## Features
 - [x] Everything Django offers OOTB
 - [x] CORS support  
