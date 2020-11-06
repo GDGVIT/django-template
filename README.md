@@ -48,6 +48,13 @@ In production
 docker-compose up -d --build
 ```
 
+## More info
+This template comes with an already existing model. Feel free to modify or remove it.
+
+API docs can be found at:
+- http://localhost:8000/docs (OpenAPI 3)
+-  http://localhost:8000/redoc (ReDoc)
+
 ## Contributors
 
 <table>
