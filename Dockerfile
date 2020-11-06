@@ -19,7 +19,6 @@ RUN poetry install --no-root --no-dev
 COPY . /app
 ENV PYTHONPATH=/app
 
-RUN python manage.py makemigrations && python manage.py migrate
 RUN python manage.py collectstatic
 
-CMD ["gunicorn", "backend.asgi:application", "-b", "0.0.0.0:8000", "-k", "uvicorn.workers.UvicornWorker"]
+CMD python manage.py migrate && gunicorn backend.asgi:application -b 0.0.0.0:8000 -k uvicorn.workers.UvicornWorker
