@@ -19,10 +19,10 @@
 ## Instructions to run
 
 ### Pre-requisites:
-	-  [Python 3.7 and above](https://www.python.org/downloads/)
-	-  [Poetry](https://python-poetry.org/)
-	-  [Docker](https://docs.docker.com/engine/install/)
-    -  [docker-compose](https://docs.docker.com/compose/install/)
+-  [Python 3.7 and above](https://www.python.org/downloads/)
+-  [Poetry](https://python-poetry.org/)
+-  [Docker](https://docs.docker.com/engine/install/)
+-  [docker-compose](https://docs.docker.com/compose/install/)
 	
 ### Installing dependencies
 ```bash
@@ -53,7 +53,7 @@ This template comes with an already existing model. Feel free to modify or remov
 
 API docs can be found at:
 - http://localhost:8000/docs (OpenAPI 3)
--  http://localhost:8000/redoc (ReDoc)
+- http://localhost:8000/redoc (ReDoc)
 
 ## Contributors
 
