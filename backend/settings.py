@@ -27,8 +27,17 @@ SECRET_KEY = os.getenv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.getenv('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', os.getenv("VIRTUAL_HOST")]
-CORS_ALLOWED_ORIGINS = ['http://localhost', 'http://127.0.0.1', f"https://{os.getenv('VIRTUAL_HOST', default='example.com')}"]
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1', 
+    os.getenv("VIRTUAL_HOST"),
+    ]
+    
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost', 
+    'http://127.0.0.1', 
+    f"https://{os.getenv('VIRTUAL_HOST', default='example.com')}",
+    ]
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
