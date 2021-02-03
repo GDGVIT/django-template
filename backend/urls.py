@@ -21,7 +21,6 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("api.urls")),
